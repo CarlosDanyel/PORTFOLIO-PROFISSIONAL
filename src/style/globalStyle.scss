@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "Stolzl-Medium";
+    src: url("../assets/font/Stolzl-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Stolzl-Recular";
+    src: url("../assets/font/Stolzl-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: static !important;
+    overflow: auto !important;
+}
+
+// ::selection {
+//     background-color: $color-cursor;
+//     color: rgb(255, 255, 255);
+// }
+
+// body::-webkit-scrollbar {
+//     width: 5px;
+//     padding: 0 5px;
+// }
+// body::-webkit-scrollbar-track {
+//     background-color: #ffffff;
+// }
+// body::-webkit-scrollbar-thumb {
+//     background-color: $color-cursor;
+//     border-radius: 20px;
+// }

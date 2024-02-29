@@ -1,0 +1,86 @@
+@import "../../style/variable.scss";
+
+.TextInfite {
+    overflow: hidden;
+    padding: 2rem 0;
+    background-color: #70af69;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+
+    .TextInfite_slide {
+        display: inline-block;
+        animation: 30s slide infinite linear;
+
+        span {
+            display: inline-block;
+
+            .containerSlide {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 25px;
+                }
+
+                h5 {
+                    font-family: "Stolzl-Recular";
+                    color: #fff;
+                    font-size: 1.7rem;
+                    letter-spacing: 0.1rem;
+                    margin: 0 5rem;
+                }
+            }
+        }
+    }
+
+    &:hover .TextInfite_slide {
+        transition: 400ms;
+        animation-play-state: paused;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 450px;
+        height: 100%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #70af69);
+
+        @media (max-width: 925px) {
+            width: 200px;
+
+            @media (max-width: 571px) {
+                width: 50px;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #70af69);
+
+        @media (max-width: 925px) {
+            width: 200px;
+
+            @media (max-width: 571px) {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

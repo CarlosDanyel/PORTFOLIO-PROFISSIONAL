@@ -1,0 +1,202 @@
+@import "../../style/variable.scss";
+
+.home {
+    width: 100%;
+    background: url("../../assets/background-home.jpg") no-repeat center;
+    position: relative;
+    padding-bottom: 17rem;
+
+    .display_Home {
+        padding-top: 13rem;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+        position: relative;
+
+        .container_textoHome {
+            display: flex;
+            flex-direction: column;
+
+            .textHome {
+                color: $cor-text2;
+                font-family: "Kumbh Sans", sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 3em;
+
+                @media (max-width: 617px) {
+                    font-size: 18px;
+
+                    @media (max-width: 617px) {
+                        font-size: 16px;
+
+                        @media (max-width: 414px) {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+            .containerTextTitle {
+                position: relative;
+
+                .textPrincipal {
+                    color: $cor-btnWhite;
+                    font-family: "Syne", sans-serif;
+                    font-size: 7.2rem;
+                    font-weight: 700;
+                    line-height: 1.1em;
+                    letter-spacing: -0.03em;
+
+                    .colorTextHome {
+                        background: linear-gradient(
+                            180deg,
+                            #7cb45f 33.5%,
+                            rgba(247, 245, 9, 0.9) 99.98%,
+                            rgba(125, 182, 96, 0.99) 99.99%
+                        );
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    @media (max-width: 1489px) {
+                        font-size: 7rem;
+
+                        @media (max-width: 1449px) {
+                            font-size: 6.8rem;
+
+                            @media (max-width: 1407px) {
+                                font-size: 6.5rem;
+
+                                @media (max-width: 1345px) {
+                                    font-size: 6.1rem;
+
+                                    @media (max-width: 1265px) {
+                                        font-size: 5.6rem;
+
+                                        @media (max-width: 1161px) {
+                                            font-size: 5.2rem;
+
+                                            @media (max-width: 1077px) {
+                                                font-size: 4.8rem;
+
+                                                @media (max-width: 993px) {
+                                                    font-size: 4.4rem;
+
+                                                    @media (max-width: 913px) {
+                                                        font-size: 4rem;
+
+                                                        @media (max-width: 830px) {
+                                                            font-size: 3.8rem;
+
+                                                            @media (max-width: 786px) {
+                                                                font-size: 3.5rem;
+
+                                                                @media (max-width: 726px) {
+                                                                    font-size: 3.3rem;
+
+                                                                    @media (max-width: 686px) {
+                                                                        font-size: 3rem;
+
+                                                                        @media (max-width: 624px) {
+                                                                            font-size: 2.7rem;
+
+                                                                            @media (max-width: 560px) {
+                                                                                font-size: 2.5rem;
+
+                                                                                @media (max-width: 518px) {
+                                                                                    font-size: 2.3rem;
+
+                                                                                    @media (max-width: 484px) {
+                                                                                        font-size: 2.1rem;
+
+                                                                                        @media (max-width: 437px) {
+                                                                                            font-size: 2rem;
+
+                                                                                            @media (max-width: 414px) {
+                                                                                                font-size: 1.9rem;
+
+                                                                                                @media (max-width: 395px) {
+                                                                                                    font-size: 1.7rem;
+
+                                                                                                    @media (max-width: 353px) {
+                                                                                                        font-size: 1.5rem;
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .containerBtnsHome {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                line-height: 3em;
+
+                .btnHome {
+                    margin-top: 2rem;
+                    border: 1px solid #fff;
+                    border-radius: 30px;
+                    background: #fff;
+                    color: #0f0f0f;
+                    font-family: "Kumbh Sans", sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 0rem 1.9rem;
+                    cursor: pointer;
+                    transition: 600ms;
+                    text-decoration: none;
+
+                    &:hover {
+                        background: transparent;
+                        color: #ffffff;
+                    }
+
+                    @media (max-width: 611px) {
+                        padding: 0rem 1.2rem;
+
+                        @media (max-width: 611px) {
+                            padding: 0rem 1.1rem;
+
+                            @media (max-width: 414px) {
+                                padding: 0rem 0.9rem;
+                                font-size: 14px;
+
+                                @media (max-width: 371px) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .btnBackground {
+                    background: transparent;
+                    border: 1px solid #fff;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}

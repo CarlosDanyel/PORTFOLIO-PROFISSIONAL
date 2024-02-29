@@ -1,0 +1,18 @@
+.cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #70af69;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+
+    @media (max-width: 497px) {
+        display: none;
+    }
+}

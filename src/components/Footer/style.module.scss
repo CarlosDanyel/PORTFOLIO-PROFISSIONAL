@@ -1,0 +1,219 @@
+@import "../../style/variable.scss";
+
+.rodape {
+    width: 100%;
+    background: url("../../assets/background-home.jpg") no-repeat center;
+    background-size: cover;
+    padding: 6rem 0 0 0;
+
+    .displayRodape {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        max-width: $width-display;
+
+        .messageInfo {
+            padding: 0 0 4rem 0;
+
+            span {
+                font-family: "Syne", sans-serif;
+                color: #fffff7;
+                font-weight: 600;
+                font-size: 47px;
+            }
+
+            @media (max-width: 688px) {
+                span {
+                    @media (max-width: 696px) {
+                        text-align: center;
+                        font-size: 40px;
+
+                        @media (max-width: 588px) {
+                            font-size: 35px;
+
+                            @media (max-width: 514px) {
+                                font-size: 30px;
+
+                                @media (max-width: 440px) {
+                                    font-size: 29.8px;
+
+                                    @media (max-width: 426px) {
+                                        font-size: 29px;
+
+                                        @media (max-width: 426px) {
+                                            font-size: 28px;
+
+                                            @media (max-width: 412px) {
+                                                font-size: 26px;
+
+                                                @media (max-width: 382px) {
+                                                    font-size: 25px;
+
+                                                    @media (max-width: 368px) {
+                                                        font-size: 23px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .containerRodape {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            padding: 0 0 4rem 0;
+
+            .containerLogo {
+                padding-right: 9rem;
+            }
+
+            .ContainerInformaçoesRodape {
+                display: flex;
+                gap: 10rem;
+            }
+
+            .containerInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .title {
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+
+                span {
+                    font-family: "Syne", sans-serif;
+                    color: #b6b6b6;
+                    font-weight: 600;
+                    font-size: 17px;
+                    cursor: pointer;
+                    transition: 400ms;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .containerInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .title {
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+
+                a {
+                    font-family: "Syne", sans-serif;
+                    color: #b6b6b6;
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: 400ms;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            @media (max-width: 902px) {
+                flex-direction: column;
+
+                .ContainerInformaçoesRodape {
+                    flex-direction: column;
+                    gap: 3rem !important;
+                }
+            }
+        }
+
+        .containerLinkPagina {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem 0;
+            border-top: 2px solid #1e1e1f;
+            border-bottom: 2px solid #1e1e1f;
+            margin-bottom: 2rem;
+
+            .links {
+                display: flex;
+                gap: 3rem;
+                flex-wrap: wrap;
+
+                .title {
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 22px;
+                }
+
+                a {
+                    font-family: "Syne", sans-serif;
+                    color: #b6b6b6;
+                    font-weight: 700;
+                    font-size: 17px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: 400ms;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .copy {
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    font-family: "Syne", sans-serif;
+                    color: #b6b6b6;
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: 400ms;
+
+                    .destaqueCopy {
+                        color: #ffffff;
+                        white-space: pre-line;
+                        word-break: break-all;
+                    }
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            @media (max-width: 1133px) {
+                justify-content: center;
+                .links {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

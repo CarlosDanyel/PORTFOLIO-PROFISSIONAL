@@ -1,0 +1,17 @@
+@import "../../style/variable.scss";
+
+main {
+    width: 100%;
+
+    .projetosPage {
+        padding: 0 0 5rem 0;
+        margin-top: -12rem;
+
+        .displayProjeto {
+            width: 90%;
+            margin: 0 auto;
+            max-width: $width-display;
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+@import "../../style/variable.scss";
+
+.redesDiv {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.021);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .containerRedes {
+        position: relative;
+        width: 25%;
+        padding: 3rem 0;
+        background-color: #0f0f0f;
+        background: url("../../assets/background-home.jpg") no-repeat center;
+
+        .displayRedesDiv {
+            height: 100%;
+            width: 80%;
+            margin: 0 auto;
+            max-width: $width-displayRedesDiv;
+            position: relative;
+
+            .logo_close {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .menuClose {
+                    font-size: 35px;
+                    color: #ffffff;
+                    cursor: pointer;
+
+                    svg {
+                        transition: 1s;
+                        &:hover {
+                            color: #7db660;
+                            rotate: 90deg;
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+
+                .logo {
+                    cursor: pointer;
+                }
+            }
+
+            .ListaRedes {
+                list-style: none;
+                padding-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                li {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    cursor: pointer;
+
+                    a {
+                        font-family: "Stolzl-Recular", sans-serif;
+                        letter-spacing: 0.05rem;
+                        font-size: 18px;
+                        color: $cor-text;
+                        text-decoration: none;
+                        position: relative;
+                        transition: 400ms;
+
+                        &:hover {
+                            color: $cor-colorDestaque;
+                        }
+                    }
+
+                    svg {
+                        font-size: 30px;
+                        color: #ffffff;
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            .contact_div {
+                display: flex;
+                flex-direction: column;
+
+                .line {
+                    margin-top: 1rem;
+                    width: 100%;
+                    height: 1px;
+                    background: #ffffff1e;
+                }
+
+                .containerTextContact {
+                    padding-top: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .redesDiv_numero {
+                        font-family: "Stolzl-Recular", sans-serif;
+                        letter-spacing: 0.05rem;
+                        font-size: 22px;
+                        background: linear-gradient(
+                            180deg,
+                            rgba(125, 182, 96, 0.99) 23.5%,
+                            rgba(247, 245, 9, 0.9) 99.98%,
+                            rgba(125, 182, 96, 0.99) 99.99%
+                        );
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .redesDiv_email {
+                        padding-top: 0.5rem;
+                        font-family: "Stolzl-Recular", sans-serif;
+                        letter-spacing: 0.05rem;
+                        font-size: 14px;
+                        color: $cor-textRedesDiv;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.redesDiv.active {
+    display: flex !important;
+}

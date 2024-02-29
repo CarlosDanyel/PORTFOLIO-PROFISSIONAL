@@ -1,0 +1,54 @@
+.card {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #151515;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 3rem 2rem;
+    transition: 1s;
+    cursor: pointer;
+
+    span {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 21px;
+        color: #6a6a6a;
+        font-family: "Stolzl-Medium";
+    }
+
+    h6 {
+        font-size: 23px;
+        color: #fffff7;
+        font-family: "Syne", sans-serif;
+        line-height: 37px;
+
+        @media (max-width: 505px) {
+            font-size: 21px;
+        }
+    }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background: #181818;
+        margin: 1rem 0;
+    }
+
+    svg {
+        font-size: 1.8em;
+        color: #7db660;
+        margin: 0.5rem 0;
+    }
+
+    p {
+        font-family: "Syne", sans-serif;
+        line-height: 27px;
+        color: #9b9b9b;
+    }
+
+    &:hover {
+        transform: translateY(-20px);
+    }
+}

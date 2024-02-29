@@ -1,0 +1,517 @@
+@import "../../style/variable.scss";
+
+.projetos {
+    padding-bottom: 2rem;
+    margin-top: -12rem;
+    width: 100%;
+
+    .diplayProjetos {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+        position: relative;
+
+        .outro_projetos {
+            padding-top: 2.5rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                font-family: "Syne", sans-serif;
+                color: $cor_projeto_text;
+                font-weight: 600;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid $cor_projeto_text-border;
+                text-decoration: none;
+                cursor: pointer;
+                transition: 400ms;
+
+                &:hover {
+                    border-bottom: 2px solid $cor_projeto_text-border_hover;
+                }
+            }
+        }
+    }
+}
+
+.sobre {
+    padding: 4rem 0;
+    background: url("../../assets/background-home.jpg") no-repeat center;
+    background-size: cover;
+
+    .displaySobre {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+
+        .containerSobreTitle {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+
+            .sobreContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-family: "Syne", sans-serif;
+                    color: #ffffffe3;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+                h3 {
+                    padding: 0.5rem 0 3rem 0;
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 47px;
+
+                    @media (max-width: 635px) {
+                        font-size: 39px;
+
+                        @media (max-width: 527px) {
+                            font-size: 34px;
+
+                            @media (max-width: 461px) {
+                                font-size: 30px;
+
+                                @media (max-width: 409px) {
+                                    font-size: 26px;
+
+                                    @media (max-width: 351px) {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    font-family: "Syne", sans-serif;
+                    color: #9b9b9b;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 30px;
+
+                    @media (max-width: 455px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .ContainerServiceCard {
+                display: flex;
+                width: 100%;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 1473px) {
+                flex-direction: column;
+            }
+        }
+
+        .cardContatoService {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+
+            .containerContatoService {
+                width: 100%;
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 1473px) {
+                flex-direction: column;
+            }
+        }
+
+        .containerContato {
+            width: 100%;
+
+            .cardContato {
+                position: relative;
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                background-color: #151515;
+                padding: 0rem 2rem;
+                border-radius: 8px;
+                background: url("../../assets/imgContato.png") no-repeat
+                    center/cover;
+                transition: 1s;
+                cursor: pointer;
+
+                h5 {
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 32px;
+
+                    @media (max-width: 414px) {
+                        font-size: 21px;
+                    }
+                }
+
+                .LinkContato {
+                    margin-top: 1.2rem;
+                    padding: 0.8rem 1.7rem;
+                    font-family: "Syne", sans-serif;
+                    border-radius: 8px;
+                    color: #fffff7;
+                    font-size: 17px;
+                    background: #7cb45f;
+                    font-weight: 700;
+                    border: none;
+                    cursor: pointer;
+                    transition: 600ms;
+
+                    &:hover {
+                        background: #5f884a;
+                        transform: scaleX(1.1);
+                    }
+                }
+
+                .cardScrool {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: -35px;
+                    bottom: -30px;
+                    content: "";
+                    position: absolute;
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: 50%;
+                    background: #1f1f1f;
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 25px;
+                        color: #fffff7;
+                        animation: floatAnimation 3s infinite ease-in-out;
+                    }
+
+                    @media (max-width: 859px) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+
+            @media (max-width: 1473px) {
+                height: 20rem;
+            }
+        }
+    }
+}
+
+.recentPost {
+    padding: 4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+    .displayPost {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+
+        .dcrPost {
+            font-family: "Syne", sans-serif;
+            color: $cor_projeto_text;
+            font-weight: 600;
+            font-size: 17px;
+
+            @media (max-width: 390px) {
+                font-size: 15px;
+            }
+        }
+
+        .titlePost {
+            padding-top: 0.5rem;
+            font-family: "Syne", sans-serif;
+            color: $cor-titleSection;
+            font-size: 47px;
+
+            @media (max-width: 658px) {
+                font-size: 40px;
+
+                @media (max-width: 556px) {
+                    font-size: 35px;
+
+                    @media (max-width: 488px) {
+                        font-size: 30px;
+
+                        @media (max-width: 420px) {
+                            font-size: 29.8px;
+
+                            @media (max-width: 390px) {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tech {
+    width: 100%;
+    background: url("../../assets/background-home.jpg") no-repeat center;
+    padding: 6rem 0;
+
+    .displayTech {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+
+        .containerTech {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+            overflow: hidden;
+
+            .textTech {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .textTec_descricao {
+                    font-family: "Syne", sans-serif;
+                    color: #ffffffe3;
+                    font-weight: 600;
+                    font-size: 17px;
+
+                    @media (max-width: 420px) {
+                        font-size: 15px;
+                    }
+                }
+
+                h5 {
+                    padding: 0.5rem 0 3rem 0;
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 47px;
+
+                    @media (max-width: 612px) {
+                        font-size: 40px;
+
+                        @media (max-width: 556px) {
+                            font-size: 35px;
+
+                            @media (max-width: 488px) {
+                                font-size: 30px;
+
+                                @media (max-width: 420px) {
+                                    font-size: 29.8px;
+
+                                    @media (max-width: 390px) {
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                P {
+                    font-family: "Syne", sans-serif;
+                    color: #9b9b9b;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 30px;
+                    white-space: nowrap;
+                }
+            }
+
+            @media (max-width: 1473px) {
+                flex-direction: column;
+
+                .textTech {
+                    width: 100%;
+
+                    p {
+                        white-space: wrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contato {
+    width: 100%;
+    background: #ffffff;
+    padding: 6rem 0;
+
+    .displayContato {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+
+        .contatoContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .contatoContainerText {
+                display: flex;
+                flex-direction: column;
+
+                .textDcr {
+                    font-family: "Syne", sans-serif;
+                    color: $cor_projeto_text;
+                    font-weight: 600;
+                    font-size: 17px;
+
+                    @media (max-width: 420px) {
+                        font-size: 15px;
+                    }
+                }
+
+                h5 {
+                    padding: 0.5rem 0 3rem 0;
+                    font-family: "Syne", sans-serif;
+                    color: $cor-titleSection;
+                    font-size: 47px;
+
+                    @media (max-width: 696px) {
+                        font-size: 40px;
+
+                        @media (max-width: 588px) {
+                            font-size: 35px;
+
+                            @media (max-width: 514px) {
+                                font-size: 30px;
+
+                                @media (max-width: 440px) {
+                                    font-size: 29.8px;
+
+                                    @media (max-width: 426px) {
+                                        font-size: 29px;
+
+                                        @media (max-width: 426px) {
+                                            font-size: 28px;
+
+                                            @media (max-width: 412px) {
+                                                font-size: 26px;
+
+                                                @media (max-width: 382px) {
+                                                    font-size: 25px;
+
+                                                    @media (max-width: 368px) {
+                                                        font-size: 23px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                P {
+                    font-family: "Syne", sans-serif;
+                    color: #797979;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 30px;
+
+                    @media (max-width: 386px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .contatoIcon {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding-top: 3rem;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-family: "Syne", sans-serif;
+                    color: #797979;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 30px;
+
+                    svg {
+                        font-size: 22px;
+                        color: #7cb45f;
+                    }
+
+                    @media (max-width: 420px) {
+                        font-size: 15px;
+                    }
+                }
+
+                .textContatoInfo {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-family: "Stolzl-Recular";
+                    color: #000000;
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        @media (max-width: 1483px) {
+            flex-direction: column;
+            gap: 3rem;
+
+            .contatoContainer {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .contatoIcon {
+                justify-content: space-between;
+            }
+
+            @media (max-width: 1109px) {
+                .contatoContainer {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

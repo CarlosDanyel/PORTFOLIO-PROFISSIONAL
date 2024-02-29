@@ -1,0 +1,34 @@
+@import "../../style/variable.scss";
+
+header {
+    padding-top: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+
+    .displayHeader {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                cursor: pointer;
+            }
+
+            .menu {
+                svg {
+                    font-size: 30px;
+                    color: #fffff7;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
