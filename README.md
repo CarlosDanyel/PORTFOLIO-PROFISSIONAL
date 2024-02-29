@@ -4,7 +4,7 @@
 
 ![Resultado final do projeto](./src/assets/pagina.png)
 
-<h4 align="center"><a href="https://pagina-de-vendas-ebook-carlosdanyel.vercel.app/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://portfolio-v2-inky-delta.vercel.app/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Sobre
 
