@@ -12,10 +12,9 @@ const HomePage = ({
     textTitle2,
     textTitleBtn,
     link,
-    id,
 }) => {
     return (
-        <section className={style.home} id={id}>
+        <section className={style.home}>
             <div className={style.display_Home}>
                 <div className={style.container_textoHome}>
                     <span className={style.textHome}>{textDescricao}</span>

@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -29,21 +29,6 @@ const Home = () => {
         setToggle(!active);
     };
 
-    useEffect(() => {
-        const elementId = "#container";
-        const options = {
-            animate: true,
-            patternWidth: 500,
-            patternHeight: 100,
-            grainOpacity: 0.01,
-            grainDensity: 1,
-            grainWidth: 1,
-            grainHeight: 1,
-        };
-
-        grained(elementId, options);
-    }, []);
-
     return (
         <main>
             <HomePage
@@ -54,7 +39,6 @@ const Home = () => {
                 textTitle2={"Transformação Digital"}
                 textTitleBtn={"Portfolio Profissional"}
                 link={"projetos"}
-                id={"container"}
             />
             <section className={style.projetos} id="projetos">
                 <div className={style.diplayProjetos}>
