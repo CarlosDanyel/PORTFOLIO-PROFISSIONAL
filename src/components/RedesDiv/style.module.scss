@@ -15,7 +15,7 @@
 
     .containerRedes {
         position: relative;
-        width: 25%;
+        width: 330px;
         padding: 3rem 0;
         background-color: #0f0f0f;
         background: url("../../assets/background-home.jpg") no-repeat center;
@@ -125,6 +125,7 @@
                         letter-spacing: 0.05rem;
                         font-size: 14px;
                         color: $cor-textRedesDiv;
+                        word-wrap: break-word;
                     }
                 }
             }
