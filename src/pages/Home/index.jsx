@@ -35,7 +35,7 @@ const Home = () => {
             animate: true,
             patternWidth: 500,
             patternHeight: 100,
-            grainOpacity: 0.03,
+            grainOpacity: 0.01,
             grainDensity: 1,
             grainWidth: 1,
             grainHeight: 1,
@@ -54,6 +54,7 @@ const Home = () => {
                 textTitle2={"Transformação Digital"}
                 textTitleBtn={"Portfolio Profissional"}
                 link={"projetos"}
+                id={"container"}
             />
             <section className={style.projetos} id="projetos">
                 <div className={style.diplayProjetos}>
