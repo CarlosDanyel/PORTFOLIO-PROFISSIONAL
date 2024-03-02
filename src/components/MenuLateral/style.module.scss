@@ -17,15 +17,14 @@
         max-width: $width-display;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 2rem;
 
         .containerMeu {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-top: 5rem;
             flex-wrap: wrap;
+            padding-top: 5rem;
+            gap: 2rem;
 
             .btnMenu {
                 display: flex;
@@ -50,6 +49,7 @@
             align-items: end;
             list-style: none;
             cursor: pointer;
+            margin-top: 8rem;
 
             li {
                 a {
@@ -64,12 +64,14 @@
                     }
                 }
             }
-
-            @media (max-width: 375px) {
-                padding-top: 2rem;
-                li {
-                    a {
-                        font-size: 23px;
+            @media (max-width: 602px) {
+                margin-top: 4rem;
+                @media (max-width: 375px) {
+                    padding-top: 2rem;
+                    li {
+                        a {
+                            font-size: 23px;
+                        }
                     }
                 }
             }
@@ -80,10 +82,14 @@
             flex-wrap: wrap;
             gap: 5rem;
             padding: 2rem 0;
+            width: 90%;
+            background-color: #0f0f0f;
             list-style: none;
             border-top: 2px solid #1e1e1f;
             border-bottom: 2px solid #1e1e1f;
-            margin-bottom: 2rem;
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
 
             li {
                 display: flex;
@@ -124,9 +130,8 @@
 
                     @media (max-width: 375px) {
                         border-bottom: none;
-                        li {
-                            display: none;
-                        }
+
+                        display: none;
                     }
                 }
             }
