@@ -1,12 +1,12 @@
 <h1 align="center">
-  💻​<br>Portfolio Profissional
+  🖥️ ​<br>Portfolio Profissional
 </h1>
 
 ![Resultado final do projeto](./src/assets/pagina.png)
 
 <h4 align="center"><a href="https://portfolio-v2-inky-delta.vercel.app/">Clique para visitar o projeto</a></h4>
 
-## 📚 Sobre
+## 🌟 Sobre
 
 Bem-vindo ao meu portfólio profissional, um espaço dedicado à apresentação dos meus projetos e uma visão detalhada sobre quem sou e no que trabalho.
 
