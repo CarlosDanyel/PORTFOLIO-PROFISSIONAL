@@ -1,0 +1,274 @@
+@import "../../style/variable.scss";
+
+.cardActiveProject {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.021);
+    backdrop-filter: blur(3px);
+
+    .displayProjetoCard {
+        width: 90%;
+        margin: 0 auto;
+        max-width: $width-display;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .CardTextProject {
+            position: relative;
+            padding: 3rem 0 6rem 0;
+            background-color: #0f0f0f;
+            background: url("../../assets/background-home.jpg") no-repeat center;
+
+            @media (max-width: 681px) {
+                padding: 2rem 0 2rem 0;
+
+                @media (max-width: 375px) {
+                    padding: 1rem 0 1rem 0;
+                }
+            }
+        }
+
+        .containerCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8rem;
+
+            .imgContainer {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-family: "Syne", sans-serif;
+                    color: #ffffffe3;
+                    font-weight: 600;
+                    font-size: 17px;
+                    display: flex;
+                    gap: 1rem;
+                    cursor: pointer;
+                    transition: 500ms;
+
+                    svg {
+                        color: #fffff7;
+                        font-size: 20px;
+                        transition: 500ms;
+                    }
+
+                    &:hover svg {
+                        color: #7db660;
+                    }
+
+                    &:hover {
+                        color: #7db660;
+                    }
+                }
+
+                h6 {
+                    padding: 2rem 0 4rem 0;
+                    font-family: "Syne", sans-serif;
+                    color: #fffff7;
+                    font-weight: 600;
+                    font-size: 47px;
+
+                    @media (max-width: 1169px) {
+                        font-size: 40px;
+
+                        @media (max-width: 1055px) {
+                            font-size: 37px;
+
+                            @media (max-width: 979px) {
+                                font-size: 27px;
+
+                                @media (max-width: 612px) {
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .containerInfo {
+                    display: flex;
+                    gap: 3rem;
+
+                    a {
+                        width: 120%;
+                        height: 32rem;
+
+                        .imgPrincipal {
+                            background: url("../../assets/img1.png") no-repeat
+                                center/cover;
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                            position: relative;
+
+                            &::after {
+                                content: "Click para ver";
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 2rem;
+                                font-family: "Syne", sans-serif;
+                                color: #000000;
+                                font-weight: 600;
+                                font-size: 15px;
+                                padding: 0.3rem 1.5rem;
+                                background-color: #ffffff;
+                                border-top-left-radius: 10px;
+                                border-top-right-radius: 10px;
+
+                                @media (max-width: 681px) {
+                                    font-size: 13px;
+
+                                    @media (max-width: 280px) {
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media (max-width: 1055px) {
+                            height: 15rem;
+                            width: 93%;
+
+                            .imgPrincipal {
+                                background: url("../../assets/img1.png")
+                                    no-repeat center/content;
+                            }
+
+                            @media (max-width: 375px) {
+                                height: 12rem;
+                            }
+                        }
+                    }
+
+                    .containerTextCardProjetoInfo {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 500px;
+
+                        .listaInfo {
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            gap: 2rem;
+
+                            li {
+                                font-family: "Syne", sans-serif;
+                                color: #9b9b9b;
+                                font-weight: 600;
+                                font-size: 15px;
+                                display: flex;
+                                gap: 1rem;
+
+                                transition: 500ms;
+
+                                span {
+                                    color: #fffff7;
+                                }
+                            }
+                        }
+
+                        .sobreProjeto {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+
+                            .sobreText {
+                                font-family: "Syne", sans-serif;
+                                color: #ffffffe3;
+                                font-weight: 600;
+                                font-size: 17px;
+                            }
+
+                            p {
+                                font-family: "Syne", sans-serif;
+                                color: #9b9b9b;
+                                font-weight: 600;
+                                font-size: 15px;
+                                display: flex;
+                                gap: 1rem;
+                                line-height: 30px;
+                            }
+                        }
+
+                        .listaTech {
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            gap: 1rem;
+
+                            .title {
+                                font-family: "Syne", sans-serif;
+                                color: #ffffffe3;
+                                font-weight: 600;
+                                font-size: 17px;
+                            }
+
+                            .textLista {
+                                display: flex;
+                                gap: 1rem;
+
+                                span {
+                                    font-family: "Syne", sans-serif;
+                                    color: #9b9b9b;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        @media (max-width: 1055px) {
+                            overflow: auto;
+                            height: 200px;
+                            gap: 4rem;
+
+                            &::-webkit-scrollbar {
+                                width: 5px;
+                                padding: 0 5px;
+                            }
+                            &::-webkit-scrollbar-track {
+                                background-color: #151515;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                                background-color: #70af69;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                    @media (max-width: 1055px) {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            @media (max-width: 961px) {
+                padding: 0 5rem;
+
+                @media (max-width: 681px) {
+                    padding: 0 3rem;
+
+                    @media (max-width: 473px) {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cardActiveProject.active {
+    display: flex !important;
+}

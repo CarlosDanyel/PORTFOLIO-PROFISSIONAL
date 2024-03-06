@@ -70,9 +70,7 @@
 
             .containerBtnsHome {
                 display: flex;
-                flex-wrap: wrap;
                 gap: 1rem;
-                line-height: 3em;
 
                 .btnHome {
                     margin-top: 2rem;
@@ -83,7 +81,7 @@
                     font-family: "Kumbh Sans", sans-serif;
                     font-size: 16px;
                     font-weight: 500;
-                    padding: 0rem 1.9rem;
+                    padding: 0.9em 1.9rem;
                     cursor: pointer;
                     transition: 600ms;
                     text-decoration: none;
@@ -94,13 +92,13 @@
                     }
 
                     @media (max-width: 611px) {
-                        padding: 0rem 1.2rem;
+                        padding: 0.7em 1.2rem;
 
                         @media (max-width: 611px) {
-                            padding: 0rem 1.1rem;
+                            padding: 0.6em 1.1rem;
 
                             @media (max-width: 414px) {
-                                padding: 0rem 0.9rem;
+                                padding: 0.5em 0.9rem;
                                 font-size: 14px;
 
                                 @media (max-width: 371px) {
@@ -115,6 +113,12 @@
                     background: transparent;
                     border: 1px solid #fff;
                     color: #ffffff;
+                }
+
+                @media (max-width: 334px) {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 0rem;
                 }
             }
         }

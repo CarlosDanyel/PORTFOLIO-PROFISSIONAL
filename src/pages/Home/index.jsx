@@ -34,7 +34,7 @@ const Home = () => {
             <HomePage
                 active={active}
                 click={redesActive}
-                textDescricao={"Welcome | Data enginner!"}
+                textDescricao={"Welcome | Desenvolvedor Fullstack!"}
                 textTitle={"Carlos Danyel"}
                 textTitle2={"Transformação Digital"}
                 textTitleBtn={"Portfolio Profissional"}
