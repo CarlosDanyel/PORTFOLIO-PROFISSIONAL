@@ -102,23 +102,20 @@
                         height: 32rem;
 
                         .imgPrincipal {
-                            background: url("../../assets/img1.png") no-repeat
-                                center/cover;
                             width: 100%;
                             height: 100%;
                             cursor: pointer;
                             position: relative;
+                            z-index: 3;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
 
-                            &::after {
-                                content: "Click para ver";
-                                position: absolute;
-                                bottom: 0;
-                                left: 50%;
-                                transform: translateX(-50%);
+                            span {
+                                z-index: 10;
+                                position: relative;
                                 display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                height: 2rem;
                                 font-family: "Syne", sans-serif;
                                 color: #000000;
                                 font-weight: 600;
@@ -127,6 +124,8 @@
                                 background-color: #ffffff;
                                 border-top-left-radius: 10px;
                                 border-top-right-radius: 10px;
+                                height: 2rem;
+                                align-items: center;
 
                                 @media (max-width: 681px) {
                                     font-size: 13px;
@@ -136,16 +135,59 @@
                                     }
                                 }
                             }
+
+                            &::before {
+                                content: "";
+                                top: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-image: url("../../assets/page_capaEbookProjeto.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                z-index: 2;
+                                background-position: top;
+                                transition: ease-in-out 3s;
+                                transition-delay: 1.4s;
+                            }
+
+                            &::after {
+                                content: "Click para ver";
+                                position: absolute;
+                                content: "";
+                                top: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-image: url("../../assets/img1.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                z-index: 2;
+                                background-position: top;
+                                transition: ease-in-out 1s;
+                                transition-delay: 300ms;
+
+                                @media (max-width: 681px) {
+                                    font-size: 13px;
+
+                                    @media (max-width: 280px) {
+                                        padding: 0.2rem 0.5rem;
+                                    }
+                                }
+                            }
+
+                            &:hover::before {
+                                background-position: bottom;
+                            }
+
+                            &:hover::after {
+                                top: -100%;
+                            }
                         }
 
                         @media (max-width: 1055px) {
                             height: 15rem;
                             width: 93%;
-
-                            .imgPrincipal {
-                                background: url("../../assets/img1.png")
-                                    no-repeat center/content;
-                            }
 
                             @media (max-width: 375px) {
                                 height: 12rem;

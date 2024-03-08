@@ -38,7 +38,9 @@ const CardProjeto = ({
                             <h6>{title}</h6>
                             <div className={style.containerInfo}>
                                 <a href={link}>
-                                    <div className={style.imgPrincipal}></div>
+                                    <div className={style.imgPrincipal}>
+                                        <span>Click para ver</span>
+                                    </div>
                                 </a>
                                 <div
                                     className={
