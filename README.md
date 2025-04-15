@@ -4,8 +4,6 @@
 
 ![Resultado final do projeto](./src/assets/pagina.png)
 
-<h4 align="center"><a href="https://carlosdanyel.com">Clique para visitar o projeto</a></h4>
-
 ## 🌟 Sobre
 
 Bem-vindo ao meu portfólio profissional, um espaço dedicado à apresentação dos meus projetos e uma visão detalhada sobre quem sou e no que trabalho.
