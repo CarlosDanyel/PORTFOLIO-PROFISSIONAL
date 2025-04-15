@@ -6,7 +6,7 @@
 
 ## 🌟 Sobre
 
-Bem-vindo ao meu portfólio profissional, um espaço dedicado à apresentação dos meus projetos e uma visão detalhada sobre quem sou e no que trabalho.
+Bem-vindo ao template de portfolio para devs, um espaço dedicado à apresentação dos meus projetos e uma visão detalhada sobre quem sou e no que trabalho.
 
 ---
 
